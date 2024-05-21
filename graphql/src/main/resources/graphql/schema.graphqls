@@ -1,0 +1,22 @@
+type Query{
+
+getAllDoctors: [Doctor]
+
+}
+
+type Patient{
+    id: ID
+    sur: String
+    name: String
+    ot: String
+    doctor: [Doctor]
+    isDeleted: Boolean
+}
+
+type Doctor {
+    id: ID
+    surname: String
+    name: String
+    ot: String
+    isDeleted: Boolean
+}
